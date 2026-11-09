@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>معرض تصميم — Graphic & Editorial Portfolio</title>
+<meta name="description" content="معرض أعمال في التصميم الجرافيكي والتحريري: عروض تقديمية وحملات سوشيال ميديا بمفاهيم أصلية.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@400;700&family=Readex+Pro:wght@400;700&family=Space+Grotesk:wght@400;700&family=Amiri:wght@400;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bone:#efe8da;--ink:#14120f;--tom:#e4472b;--cob:#1c2cff;--pis:#c9d8a0;--bg:var(--bone);--fg:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14120f;--fg:#efe8da}}
+:root[data-theme="dark"]{--bg:#14120f;--fg:#efe8da}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Readex Pro',sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit}
+.sp{font-family:'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;font-size:12px;direction:ltr}
+.nav{position:absolute;top:calc(env(safe-area-inset-top,0px) + 18px);inset-inline:20px;display:flex;gap:20px;flex-wrap:wrap;z-index:5;justify-content:space-between}
+.nav div{display:flex;gap:18px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:14px}.nav a:hover{text-decoration:underline}
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--bone);color:var(--ink);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:90px 20px 40px}
+.orb{position:absolute;width:44vw;height:44vw;min-width:240px;min-height:240px;border-radius:50%;background:var(--cob);inset-inline-start:-10vw;top:14%}
+.bar{position:absolute;inset-inline-end:6vw;top:0;width:6vw;min-width:28px;height:62%;background:var(--tom)}
+.hero h1{position:relative;margin:0;font-family:'Lalezar',sans-serif;font-weight:400;font-size:clamp(120px,31vw,460px);line-height:.9;z-index:2}
+.hero h1 .g{position:absolute;inset:0;color:transparent;-webkit-text-stroke:2px var(--tom);transform:translate(.035em,.05em);z-index:-1}
+.hero h1 .sd{display:block;color:var(--ink);mix-blend-mode:multiply}
+.hero .row{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:18px;border-top:2px solid var(--ink);padding-top:14px}
+.hero p{margin:0;font-family:'Aref Ruqaa',serif;font-size:clamp(22px,3.4vw,40px);line-height:1.3}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+/* statement */
+.st{background:var(--pis);color:var(--ink);padding:clamp(60px,10vw,140px) 20px}
+.st .in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:30px}
+.st h2{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:clamp(34px,6.6vw,92px);line-height:1.15;margin:0;max-width:16ch}
+.st h2 em{font-style:normal;background:var(--ink);color:var(--pis);padding:0 .15em;display:inline-block;transform:rotate(-1.5deg)}
+.st p{max-width:46ch;margin:0;font-size:17px;margin-inline-start:auto}
+/* chapters */
+.ch{padding:clamp(60px,9vw,120px) 20px;position:relative}
+.ch .hd{max-width:1180px;margin:0 auto 40px;display:flex;gap:20px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
+.ch .num{font-family:'Lalezar',sans-serif;font-size:clamp(80px,16vw,220px);line-height:.8}
+.ch h2{font-family:'Aref Ruqaa',serif;font-size:clamp(30px,5vw,60px);line-height:1.2;margin:0}
+.ch .cp{max-width:40ch;font-size:15px;opacity:.85;margin:0}
+.c1{background:var(--ink);color:var(--bone)}.c1 .num{color:var(--tom)}
+.c2{background:var(--bone);color:var(--ink)}.c2 .num{color:var(--cob)}
+.w{max-width:1180px;margin:0 auto}
+/* presentation slides */
+.sl{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:16/9;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.sl>*{position:absolute}
+.pair{display:grid;grid-template-columns:7fr 5fr;gap:24px;margin-top:24px;align-items:start}
+.pair .sl:last-child{margin-top:clamp(0px,6vw,80px)}
+.lbl{margin-top:10px;opacity:.7}
+.A{background:var(--bone);color:var(--ink)}
+.A .nm{font-family:'Lalezar',sans-serif;font-size:82cqw;line-height:1;color:var(--tom);bottom:-26cqw;inset-inline-end:-7cqw}
+.A .tt{font-family:'Aref Ruqaa',serif;font-size:9.5cqw;line-height:1.1;top:7cqw;inset-inline-start:6cqw}
+.A .sm{top:25cqw;inset-inline-start:6cqw;font-size:1.5cqw}
+.A .vr{inset-block:0;inset-inline-start:46cqw;width:.3cqw;background:var(--ink)}
+.A .tg{bottom:6cqw;inset-inline-start:6cqw;font-size:2cqw;max-width:34cqw}
+.B{background:var(--cob);color:var(--bone)}
+.B .q{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:8.6cqw;line-height:1.25;inset-inline:7cqw;top:12cqw}
+.B .q mark{background:var(--pis);color:var(--ink);padding:0 1.4cqw;display:inline-block;transform:rotate(-2deg)}
+.B .ring{width:38cqw;height:38cqw;border:.8cqw solid var(--pis);border-radius:50%;bottom:-14cqw;inset-inline-start:-8cqw}
+.B .cap{bottom:6cqw;inset-inline-end:7cqw;font-size:1.9cqw}
+.C{background:var(--tom);color:var(--ink)}
+.C .cir{width:62cqw;height:62cqw;border-radius:50%;background:var(--bone);inset-inline-end:-14cqw;top:-8cqw}
+.C .big{font-family:'Lalezar',sans-serif;font-size:50cqw;line-height:1;inset-inline-start:3cqw;bottom:-6cqw;mix-blend-mode:multiply}
+.C .cap{top:8cqw;inset-inline-start:7cqw;font-size:2.4cqw;max-width:26cqw;font-weight:700}
+/* panoramic carousel */
+.strip{direction:ltr;display:grid;grid-template-columns:repeat(3,1fr);max-width:1180px;margin:0 auto;box-shadow:0 30px 60px rgba(0,0,0,.25)}
+.fr{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:4/5;background:var(--cob);color:var(--bone);outline:1px solid rgba(239,232,218,.25)}
+.ly{position:absolute;top:0;width:300cqw;height:125cqw;pointer-events:none}
+.ly .ci{position:absolute;width:120cqw;height:120cqw;border-radius:50%;background:var(--tom);left:150cqw;top:28cqw}
+.ly .wd{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Lalezar',sans-serif;font-size:190cqw;line-height:1;white-space:nowrap;color:var(--bone);direction:rtl;padding-bottom:12cqw}
+.chip{position:absolute;left:7cqw;bottom:8cqw;right:7cqw;background:var(--pis);color:var(--ink);padding:4cqw;direction:rtl}
+.chip b{display:block;font-family:'Aref Ruqaa',serif;font-size:9cqw;line-height:1.1}
+.chip span{font-size:4.2cqw}
+.pg{position:absolute;top:6cqw;left:7cqw;font-size:3cqw;font-family:'Space Grotesk',sans-serif;letter-spacing:.14em}
+.cn{max-width:1180px;margin:22px auto 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+/* contact */
+.ct{background:var(--tom);color:var(--ink);padding:clamp(70px,11vw,150px) 20px 60px}
+.ct .in{max-width:1180px;margin:0 auto}
+.ct h2{font-family:'Lalezar',sans-serif;font-weight:400;font-size:clamp(60px,14vw,200px);line-height:.95;margin:0}
+.ct .ln{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;border-top:2px solid var(--ink);padding-top:18px;font-size:18px}
+.ct .ln a{direction:ltr;text-underline-offset:5px}
+.nt{max-width:1180px;margin:44px auto 0;font-size:13px;opacity:.75}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+@media (max-width:720px){.pair{grid-template-columns:1fr}.pair .sl:last-child{margin-top:0}.st p{margin-inline-start:0}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+<nav class="nav sp" aria-label="التنقل"><span>Portfolio 2026</span><div><a href="#statement">Statement</a><a href="#presentation">Presentation</a><a href="#social">Social</a><a href="#contact">Contact</a></div></nav>
+<div class="orb" aria-hidden="true"></div><div class="bar" aria-hidden="true"></div>
+<h1 class="rise" aria-label="تصميم"><span class="g" aria-hidden="true">تصميم</span><span class="sd">تصميم</span></h1>
+<div class="row"><p class="rise" style="animation-delay:.2s">أعمال تُرى قبل أن تُقرأ.</p><span class="sp">Graphic · Editorial · Typography</span></div>
+</header>
+
+<section class="st" id="statement"><div class="in rv">
+<span class="sp">Creative statement</span>
+<h2>أبدأ من المعنى، ثم أبني حوله <em>الحرف</em> واللون والمساحة.</h2>
+<p>لا يكفي أن يبدو التصميم جميلًا؛ يجب أن تكون خلفه فكرة. في كل مشروع أحدد استعارة بصرية واحدة، ثم أتركها تقود الخط والتكوين وتوزيع الألوان، وأقرّر ما أحذفه بقدر ما أقرّر ما أضيفه.</p>
+</div></section>
+
+<section class="ch c1" id="presentation">
+<div class="hd rv"><div><span class="sp">Chapter 01</span><h2>الحبر والفراغ</h2></div><div class="num" aria-hidden="true">٠١</div><p class="cp">عرض تحريري مبني على التباين: أرقام تتجاوز حدود الشريحة، وعبارة تمسك بكلمة واحدة، وشكل هندسي يقطع الصفحة.</p></div>
+<div class="w rv">
+<div class="sl A" role="img" aria-label="غلاف العرض: الحبر والفراغ، ٢٠٢٦">
+<div class="nm" aria-hidden="true">٢٦</div><div class="tt">الحبر<br>والفراغ</div><div class="sm sp">Ink &amp; Space — Editorial deck</div><div class="vr"></div><div class="tg">عرض تحريري يرى في المساحة الفارغة معنى، وفي الحرف الكبير مشهدًا كاملًا.</div></div>
+<div class="pair">
+<div><div class="sl B" role="img" aria-label="شريحة عبارة: المساحة الفارغة ليست فراغًا"><div class="ring"></div><div class="q">المساحة الفارغة <mark>ليست فراغًا</mark> بل صمتٌ يُسمع.</div><div class="cap sp">02 — Statement</div></div><div class="lbl sp">Statement slide</div></div>
+<div><div class="sl C" role="img" aria-label="شريحة أرقام: ٧٣٪ رقم تجريبي"><div class="cir"></div><div class="big" aria-hidden="true">٧٣٪</div><div class="cap">رقم تجريبي قابل للتعديل: معدل النمو السنوي</div></div><div class="lbl sp">Data slide</div></div>
+</div></div></section>
+
+<section class="ch c2" id="social">
+<div class="hd rv"><div><span class="sp">Chapter 02</span><h2>حرف واحد، ثلاث قصص</h2></div><div class="num" aria-hidden="true">٠٢</div><p class="cp">كاروسيل بانورامي: كلمة «عين» تمتد عبر الشرائح الثلاث، فلا يكتمل المشهد إلا بالتمرير.</p></div>
+<div class="strip rv" id="strip" role="img" aria-label="كاروسيل من ثلاث شرائح تمتد عبرها كلمة عين"></div>
+<div class="cn sp"><span>Panoramic carousel · 3 × 4:5</span><span>Swipe →</span></div>
+</section>
+
+<section class="ct" id="contact"><div class="in rv">
+<span class="sp">Contact</span>
+<h2>لنصنع شيئًا يُرى.</h2>
+<div class="ln"><a href="mailto:asail4cs@gmail.com">asail4cs@gmail.com</a><a href="https://linkedin.com/in/Asail7" rel="noopener">linkedin.com/in/Asail7</a><a href="https://asail.is-a.dev" rel="noopener">asail.is-a.dev</a></div>
+</div>
+<p class="nt">نسخة أولية من المعرض: فصلان من الفصول المخطط لها. جميع العروض معاينات HTML وليست قوالب منشورة في كانفا.</p>
+</section>
+
+<script>
+var T=[["عين","ترى قبل أن تصمّم","01 / 03"],["عمق","طبقات تصنع المعنى","02 / 03"],["عبارة","كلمة تبقى بعد الصورة","03 / 03"]],s=document.getElementById('strip');
+T.forEach(function(t,n){s.insertAdjacentHTML('beforeend','<div class="fr"><div class="ly" style="left:-'+(n*100)+'cqw"><div class="ci"></div><div class="wd" aria-hidden="true">عين</div></div><div class="pg">'+t[2]+'</div><div class="chip"><b>'+t[0]+'</b><span>'+t[1]+'</span></div></div>')});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
